@@ -1,0 +1,477 @@
+/* Globals */
+
+html {
+  font-family: "Lato", serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+/*div {
+  border: solid pink 1px;
+} */
+
+/* Nav Bar */
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}
+
+#logo h3{
+  font-size: 28px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.mobicon {
+  display: none;
+}
+
+.academy {
+  font-weight: bold;
+}
+
+#navbar li {
+  display: inline-flex;
+  padding: 6px 8px 0px 8px;
+}
+
+#navlink {
+  padding-right: 16px;
+}
+
+/* 1st */
+
+.container1 {
+  display: flex;
+  background-color: lightgrey;
+  padding: 32px 24px;
+}
+
+.img-large {
+  width: 60%;
+  padding-right: 12px;
+}
+
+.img-large img
+.image2 img{
+  width: 100%;
+}
+
+.c1-left {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 12px;
+  max-width: 30%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.bannerh1 {
+  font-size: 60px;
+  weight: 700;
+  line-height: 1.2;
+  color: rgb(45,45,45);
+  padding-bottom: 32px 0px;
+}
+
+.c1-left h2 {
+  line-height: 1.6;
+  color: rgb(45,45,45);
+}
+
+
+#button {
+  text-align: center;
+  padding-left: 0px;
+  width: 100%;
+  background-color: rgb(50,50,50);
+  color: white;
+}
+
+#button p {
+  padding: 8px 0px;
+  font-size: 20px;
+}
+
+/* 2nd */
+
+.img-mob {
+  display: none;
+}
+
+.container2 {
+  display: flex;
+}
+
+.c2-left {
+ width: 60%;
+ margin-top: 34px;
+ border-left: lightgrey solid 1px;
+ padding-right: 24px;
+}
+
+.image2 {
+  margin: 34px 24px;
+}
+
+#info-sub h2 {
+  font-size: 45px;
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+
+#info-sub p {
+  font-size:20px;
+  color: rgb(75 75 75);
+  line-height: 1.48;
+  padding-bottom: 34px;
+}
+#info-sub {
+  margin: 0 24px;
+  max-width: 85%;
+}
+
+#info-sub p
+.credit-p{
+  color: red;
+}
+
+.c2item-container {
+  display: flex;
+  align-items: center
+}
+
+.c2item-container:last-child {
+  background-color: lightgrey;
+}
+
+.c2item-container h3 {
+  color: rgb(75,75,75);
+  font-size: 25px;
+}
+
+.c2item-container img {
+  padding: 16px;
+}
+
+/* 3rd Section */
+
+.container3 {
+  text-align: center;
+  background-color: lightgrey;
+  padding-top:32px;
+}
+
+.complex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: lightgrey;
+}
+
+.c3thumbcontainer {
+  margin: 32px;
+  text-align: left;
+  background-color: white;
+  max-width: 23%;
+}
+
+.c3thumb-img {
+  overflow: hidden;
+}
+.c3thumb-heading,
+.c3thumb-info {
+  margin: 8px 24px;
+}
+
+.c3thumb-heading  h3 {
+  font-size: 30px;
+}
+
+.c3thumb-info p {
+ font-size: 18px;
+ line-height: 1.5;
+}
+
+
+/* 4th Section */
+
+.TE {
+  text-align: center;
+  display: block;
+  padding: 32px 0px;
+}
+
+.c4-subcontainer {
+  display: flex;
+}
+
+.c4-left {
+  width: 60%;
+}
+.c4-left video {
+  width: 96%;
+  margin: 0 24px;
+  padding-bottom: 24px;
+}
+
+.video-caption {
+  margin-left: 24px;
+  padding-bottom: 32px;
+}
+
+.c4-right {
+  width: 40%;
+}
+
+.c4sub-heading  h3 {
+  font-size: 30px;
+}
+
+.c4-ic:last-child {
+  background-color: white;
+}
+
+.c4-ic:first-child {
+  background-color: lightgrey;
+}
+
+
+/* Footer */
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  border-top: lightgrey 1px solid;
+}
+
+
+.foot-copy {
+ margin-left: 24px;
+ display: inline-flex;
+}
+
+.footlinks {
+ display: flex;
+}
+
+.foot-links li {
+  display: inline-flex;
+  padding: 0 6px;
+}
+
+
+/* Media Rules - Mobile Layout */
+
+@media screen and (max-width: 465px) {
+
+
+  html {
+    display: block;
+    margin: unset;
+    padding: unset;
+  }
+
+  #logo h3 {
+    display: none;
+  }
+
+  #navlink {
+    display: none;
+  }
+
+  #navbar {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .mobicon {
+    display: inline;
+  }
+
+
+  #logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+   /* 1 */
+
+  .container1 {
+  display: inline-block;
+  padding: 0 0;
+  }
+
+.img-large img {
+  width: 465px;
+  margin:0px;
+  }
+
+  .c1-left {
+    max-width: 100%;
+  }
+  .bannerh1 {
+    font-size: 40px;
+    padding: 32px 12px;
+    margin: 0 0;
+    text-align:
+  }
+
+  .c1-left h2 {
+    padding-bottom: 24px;
+    padding-left: 12px;
+  }
+
+  #button {
+    width: 99%;
+    background-color: rgb(100,100,100);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #button p {
+    padding: 8px 0;
+  }
+
+  .c1-left {
+    padding: 0;
+  }
+  
+  /* 2 */
+  
+  .c2-right {
+    display: none;
+  }
+  
+  .c2-left {
+    width: 100%;
+    max-width: 465px;
+  }
+  
+  .c2item-container {
+    display: block;
+  }
+  
+  .img-mob {
+  display:block;
+  }
+  
+  .img-desk {
+    display: none;
+  }
+  
+  .c2item-container {
+  width: 96%;
+  overflow: hidden;
+  }
+  
+  .c2item-container img {
+    padding: 16px;
+    
+  }
+  
+  .c2item-container:last-child {
+    background-color: white;
+    padding-bottom: 32px;
+    border-bottom: lightgrey solid 1px;
+  }
+    
+  .c2item-container a {
+    padding: 16px;
+  
+  }
+  
+  .c2item-container p {
+    padding: 16px 16px 16px 16px;
+  }
+  
+  .c2item-text h3 {
+    padding: 16px 16px 0 16px;
+  }
+  
+  /* 3 */
+  
+  .container3 {
+    background-color: white;
+  }
+  
+  .complex-container {
+    display: block;
+    background-color: white;
+  }
+  
+  .c3thumbcontainer {
+  text-align: center;
+  background-color: lightgrey;
+  max-width: 100%;
+  margin: 4px 16px;
+}
+  
+  .c3thumbcontainer h3 {
+    padding: 16px;
+  }
+  
+  .c3thumb-img {
+    display: none;
+  }
+  
+  .c3thumb-info {
+    display: none;
+  }
+  
+  /* 4 */
+  
+  .container4 {
+    padding-top: 21px;
+  }
+    .TE {
+     padding: 16px 0 16px 0;
+     border-top: lightgrey 1px solid;
+  }
+  
+  .video-caption {
+    display: none;
+  }
+  
+  .c4-right {
+    display: none;
+  }
+  
+  .c4-left {
+    width: 100%;
+  }
+  
+  .c4-left video {
+    margin: 0 0 24px 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  
+  /* Footer */
+  
+  .foot-copy p{
+    padding: 16px 0;
+  }
+  .foot-links {
+    display: none;
+  } 
+   
+}
